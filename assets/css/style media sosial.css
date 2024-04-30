@@ -1,0 +1,87 @@
+/* Styles for the header */
+header {
+    background-color: #555;
+    color: white;
+    padding: 20px;
+  }
+
+  .section-title {
+    text-align: center;
+  }
+  
+  /* Styles for the main content */
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    margin-bottom: 20px;
+  }
+  
+  li {
+    list-style-type: none;
+    margin-bottom: 10px;
+  }
+  
+  /* Styles for the contact section */
+  #contact {
+    background-color: #e3dfdf;
+    padding: 40px 0;
+  }
+  
+  .contact-form {
+    margin-bottom: 20px;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  .btn {
+    background-color: #878484;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #333;
+  }
+
+  .social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+  }
+  
+  .social-media a {
+    margin: 0 10px;
+  }
+  
+  .social-media img {
+    width: 45px;
+  }
+  

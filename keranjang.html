@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- bootstrap 3 and affix -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- end  -->
+    <link rel="stylesheet" href="style Keranjang.css">
+    <title>Keranjang</title>
+</head>
+
+<body>
+
+    <div id="overlay"></div>
+
+    <div class="header">
+        <div class="item-header-1 d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+            </div>
+
+            <div class="d-flex">
+                <span class="mr-4"><a href="tentange-shop.html">Tentang E-Shop</span></a>
+                <span class="mr-4"><a href="media sosial.html">Contact</span></a>
+            </div>
+        </div>
+
+        <div class="item-header-2 d-flex flex-column">
+            <div class="d-flex justify-content-between align-items-center">
+                <img class="img-E-Shop" src="assets/img/2.png" alt="">
+                <span class="mx-2 text-kategory" onclick="kategoryOn()">Kategory</span>
+                <div class="wrap-search">
+                    <input type="text" class="form-control" placeholder="Cari di Keranjang" data-toggle="modal"
+                        data-target="#exampleModal">
+                    <div class=" wrap-icon-search">
+                        <img class="img-search" src="assets/img/3.png" alt="">
+                    </div>
+                </div>
+
+                <div class="wrap-img-shop mx-3" onclick="on()">
+                 
+                    <a href="Keranjang.html"><img class="img-shop" src="assets/img/4.png" alt=""></a>
+                
+                </div>
+
+                <span class="mr-3 line">|</span>
+
+                <div class="d-flex">
+                    <button class="btn font-weight-bold mr-3">Masuk</button>
+                    <button class="btn font-weight-bold text-white">Daftar</button>
+                </div>
+            </div>
+            <div class="text-under-search d-flex mt-2">
+                <span class="mr-3"></span>
+                <span class="mr-3"></span>
+                <span class="mr-3"></span>
+                <span class="mr-3"></span>
+                <span class="mr-3"></span>
+            </div>
+        </div>
+        </div>
+    </div>
+
+   <!--Awal Keranjang-->
+   <div class="container">
+    <div class="row row-product">  
+        <div class="col table-responsive">
+            <table class="table">
+                <thead class="table-secondary">
+                  <tr class="th-header">
+                    <th scope="col">Hapus</th>
+                    <th scope="col">Gambar</th>
+                    <th scope="col">Produk</th>
+                    <th scope="col">Harga</th>
+                    <th scope="col">Jumlah</th>
+                    <th scope="col">Subtotal</th>
+                  </tr>
+                </thead>
+                <tbody class="align-middle">
+                  <tr>
+                    <th scope="row"><img class="img-delete" src="assets/img/delete.png" alt=""></th>
+                    <td><img src="assets/img/43.png" class="img-Keranjang"></td>
+                    <td>Nike Air Jordan 1 Mid Light Smoke Grey</td>
+                    <td>Rp. 3.690.000</td>
+                    <td>
+                       
+                       <input type="number" class="form-control input-kuantitas">
+                       
+                    </td>
+                    <td>Rp. 3.690.000</td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><img class="img-delete" src="assets/img/delete.png" alt=""></th>
+                    <td><img src="assets/img/39.png" class="img-Keranjang"></td>
+                    <td>Hammerstout - Griffin - Washed Celana Jeans</td>
+                    <td>Rp. 276.250</td>
+                    <td>
+                      <input type="number" class="form-control input-kuantitas">
+                     </td>
+                     <td>Rp. 276.250</td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><img class="img-delete" src="assets/img/delete.png" alt=""></th>
+                    <td><img src="assets/img/38.png" class="img-Keranjang"></td>
+                    <td>Tshirt Uniqlo - Kaos polos lengan pendek - Pria (S-XL)</td>
+                    <td>Rp. 117.500</td>
+                    <td>
+                      <input type="number" class="form-control input-kuantitas"> 
+                     </td>
+                     <td>Rp. 235.000</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+    
+    <div class="row row-product">
+      <div class="col table-responsive">
+        <table class="table text-center" id="table-Checkout">
+            <thead class="table-secondary">
+              <tr>
+                <th scope="col" colspan="2" class="th-header text-center">Total Keranjang Belanja</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="font-weight-bold th-header">Total Harga</td>
+                <td class="th-header">Rp. 4.201.250</td>
+              </tr>
+              <tr>
+               <td colspan="2">
+                <div class="btn-Checkout">
+                    <button class="btn btn-dark mx-5">Checkout</button>
+                </div>
+               </td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+    </div>
+   </div>
+   <!--Akhir Keranjang-->
